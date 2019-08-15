@@ -13,5 +13,5 @@ COPY server.jks /opt/leshan-server-demo
 
 CMD cd /tmp && \
     chpst -u leshan java -jar /opt/leshan-server-demo/leshan-server-demo.jar \
-        -ks server.jks -ksp server -kst pkcs12 -ksa leshan -ksap server
+        -ks /opt/leshan-sever-demo/server.jks -ksp server -kst pkcs12 -ksa leshan -ksap server
 
